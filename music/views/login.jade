@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+    head
+        title= 登录
+        style.
+            html{
+                font-size:10px;
+            }
+            #bg{
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                z-index:-2;
+                background: linear-gradient( rgb(224,229,223),rgb(123,139,112));
+
+            }
+
+            #loginPage{
+                border: 10px solid hsla(0,0%,100%,.5); 
+                background: trnasparent;
+                background-clip: padding-box;
+                width:38vw;
+                position:relative;
+                margin: 0 auto;
+                padding:10px 0;
+                margin-top:35vh;
+                border-radius:8px;
+                text-align:center;
+            }
+           
+            #loginPage .loginTxt  {
+                height:40px;
+                cursor:pointer;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            }
+               #loginPage .loginTxt .line{
+                   height:16px;
+                   width:1px;
+                   background-color:#45404c;
+               }
+               #loginPage .loginTxt p{
+                   width:18vw;
+                   text-align:center;
+               }
+                #loginPage .loginTxt .login{
+                    color:white;
+               }
+               input{
+                   width:26vw;
+                   height:4vw;
+                   margin-top:16px;
+               }
+               #loginPage .loginContainer{
+                   width:38vw;
+                   display:flex;
+                   flex-direction:column;
+                   justify-content:space-between;
+                   align-items:center;
+               }
+
+                #loginPage .registerItem{
+                    display:none;
+               }
+               #sub_l,#sub_r{
+                   width:20vw;
+                   padding:4px;
+                   border-width:1px;
+                   margin:4px 0 10px 0;
+                   background-color:transparent;
+               }
+               #bubble img{
+                   width:100px;
+                   height:100px;
+                   position:absolute;
+                   top:10px;
+                   left:30px;
+               } 
+               .welcome_txt{
+                   color:white;
+                   margin:10px auto;
+               }
+               .msg_login,.msg_regist{
+                   color:white;
+               }
+
+    body
+        #bg
+        div#bubble
+        div#loginPage
+            div.loginTxt 
+                p.login 登录
+                p.line
+                p.regist 注册
+            p.welcome_txt 音乐是比一切智慧、一切哲学更高的启示
+            div.loginContainer
+                div.loginItem
+                    form(action="/login" method="post")
+                        input#username_l(name="username_l" type="text" placeholder="  用户名")
+                        br
+                        input#password_l(name="password_l" type="password" placeholder="  密码")
+                        br
+                        p.msg_login #{msg_login}
+                        button#sub_l 提交
+                div.registerItem
+                    form(action="/login/regist" method="post")
+                        input#username_r(name="username_r" type="text" placeholder="  用户名")
+                        br
+                        input#password_r(name="password_r" type="password" placeholder="  密码")
+                        br
+                        input#repassword_r(name="repassword_r" type="repassword" placeholder="  确认密码")
+                        br
+                        p.msg_regist #{msg_regist}
+                        button#sub_r 提交
+    script(src="/js/jquery.js" type="text/javascript")  
+    script(src="/api/userApi.js" type="text/javascript")  
+    script(src="/helpers/utils.js" type="text/javascript")  
+    script(src="/js/login.js" type="text/javascript")  
+   

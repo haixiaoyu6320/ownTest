@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="../css/my.css">
+    </link>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/my.js"></script>
+    <script type="text/javascript" src="../../api/userApi.js"></script>
+    <script type="text/javascript" src="../../helpers/utils.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+    </div>
+    <nav class="f12 bgc-green3 co-fff">
+        <a href="/">首页</a>
+        <a href="#" id="sorts">分类</a>
+        <a href="/html/allClass.html">课程</a>
+        <a href="#">商店</a>
+        <a href="/my">我的</a>
+        <a href="/login/logout"> [退出]</a>
+    </nav>
+    <header class="bgc-green2">
+        <div class="my-info">
+            <img class="avatar bgc-green4">
+            <div class="info-msg f12">
+                <div style="margin-bottom:10px;">
+                    <span class="username"></span>
+                    <i class="fa fa-cog setting" aria-hidden="true"></i>
+                </div>
+                <div class="set_item">
+                    <i class="fa fa-window-close set_no" aria-hidden="true"></i>
+                    <input type="text" id="set_name" name="set_name" placeholder="   姓名">
+                    <input type="text" id="set_habit" name="set_habit" placeholder="   爱好">
+                    <input type="text" id="set_sex" name="set_sex" placeholder="   性别">
+
+                    <button class="set_yes">确定</button>
+                </div>
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <span class="sex">女</span>
+                <span class="line"></span>
+                <span class="come_days">1</span>天
+            </div>
+            <div class="study-msg f12">
+                <div class="item ">
+                    <p class="val study_hours">3h</p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <p class="val-name f14">学习时长</p>
+                </div>
+                <div class="item">
+                    <p class="val exprice">535</p>
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                    <p class="val-namev f14">经验值</p>
+                </div>
+                <div class="item">
+                    <p class="val habit">钢琴</p>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <p class="val-name f14">偏好</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrap">
+        <!-- 左边导航 -->
+        <div class="navList">
+            <section class="list-item one-item">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p class=" items free-class">已学课程</p>
+            </section>
+            <section class="list-item two-item">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <p class=" items tips-txt">购物车</p>
+            </section>
+            <section class="list-item three-item">
+                <i class="fa fa-question" aria-hidden="true"></i>
+                <p class=" items ask">提问</p>
+            </section>
+            <section class="list-item four-item">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>
+                <p class=" items spec">专栏</p>
+            </section>
+        </div>
+    </div>
+    <div id="item-desc">
+
+        <div id="free-item">
+            <div class="one flex">
+                <img class="cover">
+                <div class="describe">
+                    <p class="titie">
+                        钢琴
+                    </p>
+                    <p class="process f12">
+                        3times
+                    </p>
+                </div>
+            </div>
+            <div class="two flex">
+                <img class="cover">
+                <div class="describe">
+                    <p class="titie">
+                        吉他
+                    </p>
+                    <p class="process f12"></p>
+                </div>
+            </div>
+        </div>
+        <div id="txt-item">
+            笔记1111
+        </div>
+        <div id="quest-item">
+            问题哦222
+        </div>
+        <div id="spec-item">
+            专业哦333
+        </div>
+    </div>
+
+    <!-- 侧栏 -->
+    <div id="mask"></div>
+    <div class="slider f14">
+        <div class="china">
+            <p class="className">民族乐器</p>
+            <div class="china-items">
+                <ul>
+                    <li>笛子</li>
+                    <li>萧</li>
+                    <li>唢呐</li>
+                    <li>排箫</li>
+                    <li>琵琶</li>
+                    <li>古筝</li>
+                    <li>箜篌</li>
+                    <li>古琴</li>
+                    <li>铜锣</li>
+                    <li>小鼓</li>
+                    <li>堂鼓</li>
+                    <li>二胡</li>
+                    <li>马头琴</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foreiner">
+            <p class="className">西洋乐器</p>
+            <div class="foreiner-items">
+                <ul>
+                    <li>钢琴</li>
+                    <li>吉他</li>
+                    <li>架子鼓</li>
+                    <li>小提琴</li>
+                    <li>大提琴</li>
+                    <li>萨克斯</li>
+                    <li>短笛</li>
+                    <li>电贝司</li>
+                    <li>手风琴</li>
+                    <li>小鼓</li>
+                    <li>口琴</li>
+                    <li>陶笛</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

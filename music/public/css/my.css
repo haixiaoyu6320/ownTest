@@ -1,0 +1,222 @@
+nav {
+    padding: 6px;
+}
+body{
+    background: #ffffff;
+}
+a:hover {
+    color: #aaa;
+}
+
+
+header {
+    height: 18vw;
+}
+
+header .my-info {
+    padding-top: 6vw;
+    padding-left: 6vw;
+    display: flex;
+    align-items: center;
+
+}
+
+header .my-info .avatar {
+    height: 14vw;
+    width: 14vw;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+header .info-msg {
+    position: relative;
+    padding-right: 40px;
+    margin-right: 26vw;
+
+}
+
+header .info-msg .username {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+header .info-msg .set_item{
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 180px;
+    border-radius: 6px;
+    background:rgba(0,0,0,.4);
+}
+
+header .info-msg input{
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    width: 130px;
+    height: 26px;
+    margin: 8px 15px;
+}
+header .info-msg .set_yes{
+    position: relative;
+    font-size: 10px;
+    z-index: 1;
+    background: #ffffff;
+    padding: 2px 6px;
+    margin-left: 100px;
+    border:none;
+    border-radius: 2px;
+}
+
+header .info-msg .set_no{
+    background: transparent;
+    width: 30px;
+    margin-left: 140px;
+    margin-top: 6px;
+}
+header .info-msg .line {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #45404c;
+    margin: 0 6px;
+}
+
+header .study-msg {
+    display: flex;
+
+}
+
+header .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3vw;
+}
+
+header .item .val {
+    margin-bottom: 8px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-color: white;
+
+}
+
+.content-wrap {
+    width: 80vw;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.navList {
+    position: fixed;
+    left: 0;
+    padding-left: 3vw;
+    top: 36vw;
+}
+
+.navList .list-item {
+    height: 26px;
+    padding: 6px;
+    color: #454032;
+    display: flex;
+    align-items: center;
+}
+
+.navList .list-item:hover {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding-left: 10px;
+    color: #45404c;
+    background: rgb(150, 164, 139);
+}
+
+.selceted-list-item {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding-left: 10px;
+    color: #45404c;
+    margin-bottom:6px;
+    background: rgb(150, 164, 139);
+}
+
+.navList .list-item .icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(224, 229, 223);
+    margin-right: 12px;
+}
+
+.navList .list-item .items {
+    padding: 8px;
+}
+
+#item-desc {
+    position: relative;
+    float: left;
+    right: 0;
+    top: 0;
+    width: 66%;
+    height: 70vh;
+    margin-left: 30%;
+    border: 1px solid rgb(150, 164, 139);
+}
+#free-class,
+#txt-item,
+#quest-item,
+#spec-item{
+    cursor: pointer;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#free-class .one,
+#free-class .two,
+#free-class .three,
+#free-class .four {
+    height: 18vh;
+}
+
+#free-item 
+{
+    display: block;
+}
+
+#txt-item
+{
+    display: none;
+}
+
+#quest-item
+{
+    display: none;
+}
+
+#spec-item
+{
+    display: none;
+}
+
+#free-class .cover{
+    width: 16vw;
+    height: 10vw;
+    margin-right: 50px;
+    border: 1px solid orangered
+}
+
+.sex,.study_hours,.exprice,.habit{
+    height: 16px;
+    line-height: 16px;
+}

@@ -1,0 +1,188 @@
+@import '../css/font-awesome-4.7.0/css/font-awesome.min.css' ;
+/*样式清理*/
+* {
+  margin: 0;
+  padding: 0
+}
+
+li {
+  list-style: none
+}
+
+img {
+  vertical-align: top;
+  border: none
+}
+
+
+/*公共样式*/
+html {
+  font-size: 16px;
+  color: #45404c;
+}
+
+body {
+  background-color: rgb(224, 229, 223);
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #45404c;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.co-45404c{
+  color: #45404c;
+}
+.co-green1{
+  color: rgb(224, 229, 223);
+}
+.co-green2{
+  color: rgb(181, 194, 177);
+}
+.co-green3{
+  color: rgb(150, 164, 139);
+}
+.co-green4{
+  color: rgb(123, 139, 112);
+}
+.co-fff{
+  color:#fff;
+}
+.bgc-green1{
+  background-color: rgb(224, 229, 223);
+}
+.bgc-green2{
+  background-color: rgb(181, 194, 177);
+}
+.bgc-green3{
+  background-color: rgb(150, 164, 139);
+}
+.bgc-green4{
+  background-color: rgb(123, 139, 112);
+}
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f26 {
+  font-size: 1.625rem;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex{
+  display: flex;
+}
+
+input{
+  outline: none;
+  border:0px;
+  color: #45404c;
+
+}
+
+/* 导航栏 */
+
+/* 侧栏 */
+.slider {
+  left: -20vw;
+  position: absolute;
+  top: 10vh;
+  z-index: 2;
+  width: 20vw;
+  color: #fff;
+  background-color: rgb(181, 196, 177);
+  text-align: center;
+  transition: all .6s;
+}
+
+.slider li {
+  cursor: pointer;
+  display: inline-block;
+  width: 8vw;
+  height: 4vw;
+  line-height: 4vw;
+}
+
+.slider li:hover {
+  background-color: rgba(224, 229, 223);
+  color: rgb(181, 196, 177);
+}
+
+.slider .china-items ul,
+.slider .foreiner-items ul {
+  padding: 16px 8px;
+}
+
+.slider .className {
+  height: 4vw;
+  line-height: 4vw;
+  background-color: rgb(150, 164, 139);
+}
+
+/* 遮罩 */
+
+#mask {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .3)
+}
+
+/* 搜索 */
+.fa-search{
+  color: #aaa;
+  margin-left: -28px;
+  position: relative;
+  z-index: 2;
+}

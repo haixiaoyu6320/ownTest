@@ -1,0 +1,88 @@
+nav {
+    padding: 6px;
+}
+
+a:hover {
+    color: #aaa;
+}
+
+#search .search_wrap ,#search input{
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    margin:20px 0;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 32px;
+    padding-left: 10px;
+}
+#search {
+    display: flex;
+    align-items: center;
+}
+
+ #search .search_icon{
+     position: absolute;
+     width:20px;
+     height: 20px;
+     z-index: 3;
+     right: 6px;
+     top: 24px;
+     cursor: pointer;
+
+ }
+
+.class_block{
+    padding: 20px;
+}
+.class_block .all_class_tea{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all_class_item{
+    width: 216px;
+    margin: 20px 15px;
+}
+.all_class_item .top_pic{
+    width: 216px;
+    height: 120px;
+    position: relative;
+}
+.all_class_item .top_pic .class_img{
+    position: absolute;
+    width: 216px;
+    height: 120px;
+    left: 0;
+    top: 0;
+    background: #aaa;
+    border-radius:8px; 
+
+}
+.all_class_item .top_pic .sort_txt{
+    position: absolute;
+    padding:4px 8px;
+    border-radius: 16px;
+    background: rgba(0,0,0,.6);
+    color:rgba(255,255,255,.6);
+    bottom: 8px;
+    left: 10px;
+    font-size: 10px;
+}
+
+.bottom_txt{
+    padding: 4px;
+}
+
+.bottom_txt .class_name{ 
+    padding: 3px;
+}
+.bottom_txt .introduce{
+    color: #aaa;
+    padding: 2px;
+}
+
+.bottom_txt .money{
+    color:#ED856E;
+    padding: 2px;
+}
+

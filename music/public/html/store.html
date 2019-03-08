@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="../css/store.css">
+    </link>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/store.js"></script>
+    <script type="text/javascript" src="../../api/productApi.js"></script>
+    <script type="text/javascript" src="../../helpers/utils.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="f12 bgc-green3 co-fff">
+        <a href="/">首页</a>
+        <a href="#" id="sorts">分类</a>
+        <a href="/html/allClass.html">课程</a>
+        <a href="/html/store.html">商店</a>
+        <a href="/my">我的</a>
+        <a href="/login/logout" class="user_quit">[ 退出 ]</a>
+    </nav>
+
+    <div class="store_block">
+        <div class="store_wrap">
+            <div class="nav_list">
+                <ul>
+                    <li class=" sort1">
+                        吹奏乐器&nbsp;/&nbsp;铜管乐器
+                        <i class="fa fa-caret-right"></i>
+                    </li>
+                    <li class="sort2">
+                        拉弦乐器&nbsp;/&nbsp;弦乐器
+                        <i class="fa fa-caret-right"></i>
+                    </li>
+                    <li class="sort3">
+                        弹拨乐器&nbsp;/&nbsp;键盘乐器
+                        <i class="fa fa-caret-right"></i>
+                    </li>
+                    <li class="sort4">
+                        打击乐器&nbsp;&nbsp;/木管乐器
+                        <i class="fa fa-caret-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item sort_item1">
+                <div class="introduce">
+                    <span class="f16">时代乐器</span>
+                    <p class="line"></p>
+                </div>
+                <ul class="list_item_top">
+                    <li class="">
+                        <a href="">笛子</a>
+                        <a href="">萧</a>
+                        <a href="">唢呐</a>
+                        <a href="">小号</a>
+                        <a href="">长号</a>
+                    </li>
+                </ul>
+                <ul class="list_item_botm ">
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥1500</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_dizi.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_jiazigu.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥199</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_pipa.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥240</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item sort_item2">
+                <div class="introduce">
+                    <span class="f16">接触弦乐</span>
+                    <p class="line"></p>
+                </div>
+                <ul class="list_item_top">
+                    <li class="">
+                        <a href="">二胡</a>
+                        <a href="">马头琴</a>
+                        <a href="">板胡</a>
+                        <a href="">京胡</a>
+                        <a href="">小提琴</a>
+                        <a href="">大提琴</a>
+                        <a href="">电贝司</a>
+                    </li>
+                </ul>
+                <ul class="list_item_botm ">
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item sort_item3">
+                <div class="introduce">
+                    <span class="f16">时代乐器</span>
+                    <p class="line"></p>
+                </div>
+                <ul class="list_item_top">
+                    <li class="">
+                        <a href="">二胡</a>
+                        <a href="">马头琴</a>
+                        <a href="">板胡</a>
+                        <a href="">京胡</a>
+                        <a href="">小提琴</a>
+                        <a href="">大提琴</a>
+                        <a href="">电贝司</a>
+                    </li>
+                </ul>
+                <ul class="list_item_botm ">
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_item sort_item4">
+                <div class="introduce">
+                    <span class="f16">时代乐器</span>
+                    <p class="line"></p>
+                </div>
+                <ul class="list_item_top">
+                    <li class="">
+                        <a href="">小鼓</a>
+                        <a href="">大鼓</a>
+                        <a href="">铜锣</a>
+                        <a href="">手鼓</a>
+                        <a href="">架子鼓</a>
+                        <a href="">木琴</a>
+                        <a href="">双簧管</a>
+                        <a href="">双簧管</a>
+                    </li>
+                </ul>
+                <ul class="list_item_botm ">
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../imgs/s_gitar.jpg">
+                            <div class="title">
+                                <p class="f10">木质吉他</p>
+                                <p class="f10 co-ed856e">￥200</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="goodProduct">
+            <h3>好物推荐</h3>
+            <div class="products">
+                <ul>
+                    <li>
+                        <img src="../imgs/s_saks.jpg" alt="">
+                        <div class="pro_title">
+                            <p class="pro_name">珠江钢琴</p>
+                            <p class="describe co-aaa f10">的沙发肯德基是开发建设</p>
+                            <span class="f10 co-aaa">新手</span>
+                            <span>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                            </span>
+                            <span class="f12 co-ed856e">￥320</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../imgs/s_pipa.jpg" alt="">
+                        <div class="pro_title">
+                            <p class="pro_name">珠江钢琴</p>
+                            <p class="describe co-aaa f10">的沙发肯德基是开发建设</p>
+                            <span class="f10 co-aaa">新手</span>
+                            <span>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                            </span>
+                            <span class="f12 co-ed856e">￥320</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../imgs/s_xiaotiqin.jpg" alt="">
+                        <div class="pro_title">
+                            <p class="pro_name">珠江钢琴</p>
+                            <p class="describe co-aaa f10">的沙发肯德基是开发建设</p>
+                            <span class="f10 co-aaa">新手</span>
+                            <span>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                                <i class="f10 fa fa-star"></i>
+                            </span>
+                            <span class="f12 co-ed856e">￥320</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 侧栏 -->
+    <div id="mask"></div>
+    <div class="slider f14">
+        <div class="china">
+            <p class="className">民族乐器</p>
+            <div class="china-items">
+                <ul>
+                    <li>笛子</li>
+                    <li>萧</li>
+                    <li>唢呐</li>
+                    <li>排箫</li>
+                    <li>琵琶</li>
+                    <li>古筝</li>
+                    <li>箜篌</li>
+                    <li>古琴</li>
+                    <li>铜锣</li>
+                    <li>小鼓</li>
+                    <li>堂鼓</li>
+                    <li>二胡</li>
+                    <li>马头琴</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foreiner">
+            <p class="className">西洋乐器</p>
+            <div class="foreiner-items">
+                <ul>
+                    <li>钢琴</li>
+                    <li>吉他</li>
+                    <li>架子鼓</li>
+                    <li>小提琴</li>
+                    <li>大提琴</li>
+                    <li>萨克斯</li>
+                    <li>短笛</li>
+                    <li>电贝司</li>
+                    <li>手风琴</li>
+                    <li>小鼓</li>
+                    <li>口琴</li>
+                    <li>陶笛</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
